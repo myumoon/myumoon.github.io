@@ -6,28 +6,40 @@ body {
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
-
-    /* 背景を幅いっぱいに表示 */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain cover;
-   
-    /* 背景画像が読み込まれる前に表示される背景のカラー */
-    /*
-    background-color: #020202;
-    */
 }
 /* PC */
 @media screen and (min-width: 601px){
     body {
         background-image: url("../images/bg.jpg");
+        
+        /* 背景を幅いっぱいに表示 */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain cover;
+       
+        /* 背景画像が読み込まれる前に表示される背景のカラー */
+        background-color: #020202;
     }
 }
-/* スマホ・タブレット */
+/*  スマホ・タブレット
+    https://qiita.com/volkuwabara/items/bedaf09244f5cdebb228
+*/
 @media screen and (max-width:600px){
-   body {
-        background-image: url("../images/bg_mobile.jpg");
+   body::before {
+        /* background-image: url("../images/bg_mobile.jpg") no-repeat left top; */
+        background: url("../images/bg_mobile.jpg") no-repeat left top;
+        background-size: 100% auto;
+        
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 108px;
+        content: "";
+        z-index: -1;
     }
 }
 
