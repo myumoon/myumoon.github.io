@@ -1,13 +1,24 @@
 
+/* PC */
+@media screen and (min-width: 769px){
+    body {
+        background-image: url("../images/bg.jpg");
+    }
+}
+/* スマホ・タブレット */
+@media screen and (max-width:768px){
+   body {
+        background-image: url("../images/bg_mobile.jpg");
+    }
+}
+/* デフォルト設定 */
 body {
-	/*background: #ffffff;*/
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
 
     /* 背景を幅いっぱいに表示 */
-    background-image: url("../images/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,7 +27,6 @@ body {
     /* 背景画像が読み込まれる前に表示される背景のカラー */
     background-color: #020202;
 }
-
 
 /*---------------------------------------
     Typorgraphy              
