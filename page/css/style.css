@@ -329,13 +329,14 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    Portfolio section              
 -----------------------------------------*/
-
+/*
 #portfolio small {
   color: #f0f0f0;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+*/
 
 #portfolio .portfolio-thumb {
   position: relative;
@@ -366,6 +367,8 @@ a:hover, a:active, a:focus {
     -webkit-transform:translate(-50%,-50%);
       -ms-transform:translate(-50%,-50%);
           transform:translate(-50%,-50%);
+    width: 100%;
+    padding: 10px;
 }
 
 #portfolio .portfolio-thumb:hover .portfolio-overlay {
