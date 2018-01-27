@@ -478,6 +478,7 @@ a:hover, a:active, a:focus {
 
 .col-download img {
     width: 30%;
+    margin: auto;
 }
 .download_hover:hover {
     width: 30%;
@@ -496,7 +497,6 @@ a:hover, a:active, a:focus {
     padding: 8px 15px;
     text-shadow: 1px 1px 1px #707070;
 }
-
 
 /*---------------------------------------
    Contact section              
