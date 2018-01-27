@@ -1,10 +1,14 @@
 
 body {
-		background: #ffffff;
+	/*background: #ffffff;*/
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
@@ -15,7 +19,9 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-style: normal;
   font-weight: 300;
+  color: #ffffff;
   letter-spacing: 0.5px;
+  text-shadow: 1px 1px 1px #707070;
 }
 
 h1 {
@@ -34,18 +40,20 @@ h3 {
 }
 
 h4 {
-  color: #666;
-  font-size: 12px;
+  color: #ffffff;
+  font-size: 20px;
   font-weight: normal;
   letter-spacing: 2px;
+  line-height: 170%;
 }
 
 p {
-    color: #777;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 300;
     line-height: 26px;
     letter-spacing: 0.2px;
+    text-shadow: 1px 1px 1px #707070;
 }
 
 strong {
@@ -67,15 +75,17 @@ html{
 }
 
 a {
-  color: #4d638c;
+  color: #a7e9ff;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
+  text-shadow: 1px 1px 1px #707070;
 }
 a:hover, a:active, a:focus {
-  color: #4d638c;
+  color: #42adff;
   outline: none;
+  text-shadow: 1px 1px 1px #707070;
 }
 
 * {
@@ -129,7 +139,9 @@ a:hover, a:active, a:focus {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  /*
   background: none repeat scroll 0 0 #ffffff;
+  */
 }
 
 .sk-spinner-wordpress.sk-spinner {
@@ -178,10 +190,10 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .navbar-default {
-    background: #ffffff;
+    background: #ffffffcc;
     padding: 18px 0;
     border: none;
-    margin-top: 62px;
+    margin-top: 30px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -198,7 +210,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav li a {
-    color: #777;
+    color: #555;
     font-size: 16px;
     letter-spacing: 1px;
     -webkit-transition: all 0.4s ease-in-out;
@@ -208,24 +220,24 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav > li a:hover {
-    color: #333 !important;
+    color: #3fa2da !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #777;
+    color: #3fa2da;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav li a:hover,
  .navbar-default .navbar-nav .active > a {
-    color: #333;
+    color: #3fa2da;
   }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #333;
+    color: #c33358;
     background-color: transparent;
 }
 
@@ -235,7 +247,7 @@ a:hover, a:active, a:focus {
   }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background: #bdc3c7;
+    background: #c33358;
     border-color: transparent;
   }
 
@@ -244,6 +256,11 @@ a:hover, a:active, a:focus {
   background-color: transparent;
 }
 
+.navbar-brand-icon {
+  width: 60px;
+  height: 60px;
+  margin: -10px;
+}
 
 
 /*---------------------------------------
@@ -314,13 +331,14 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
    Portfolio section              
 -----------------------------------------*/
-
+/*
 #portfolio small {
   color: #f0f0f0;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+*/
 
 #portfolio .portfolio-thumb {
   position: relative;
@@ -351,6 +369,8 @@ a:hover, a:active, a:focus {
     -webkit-transform:translate(-50%,-50%);
       -ms-transform:translate(-50%,-50%);
           transform:translate(-50%,-50%);
+    width: 100%;
+    padding: 10px;
 }
 
 #portfolio .portfolio-thumb:hover .portfolio-overlay {
