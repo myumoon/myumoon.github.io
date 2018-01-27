@@ -379,7 +379,6 @@ a:hover, a:active, a:focus {
 
 #portfolio .portfolio-thumb .portfolio-overlay {
   position: absolute;
-  background: #222;
   color: #ffffff;
   top: 0;
   left: 0;
@@ -389,23 +388,51 @@ a:hover, a:active, a:focus {
   height: 100%;
   text-align: center;
   vertical-align: top;
-  opacity: 0;
   transition: all 0.4s ease-in-out;
+}
+/* PC */
+@media screen and (min-width: 960px){
+    #portfolio .portfolio-thumb .portfolio-overlay {
+        background: #222;
+        opacity: 0;
+    }
+    #portfolio .portfolio-thumb:hover .portfolio-overlay {
+        opacity: 0.9;
+    }
+}
+/* スマホ・タブレットは最初から説明画像をオーバーレイしておく */
+@media screen and (max-width:959px){
+    #portfolio .portfolio-thumb .portfolio-overlay {
+        background: #202020A0;
+        /*
+        opacity: 0.6;
+        */
+        height: 30%;
+    }
 }
 
 #portfolio .portfolio-item {
     position: absolute;
     top:50%;
     left: 50%;
-    -webkit-transform:translate(-50%,-50%);
-      -ms-transform:translate(-50%,-50%);
-          transform:translate(-50%,-50%);
     width: 100%;
     padding: 10px;
 }
-
-#portfolio .portfolio-thumb:hover .portfolio-overlay {
-  opacity: 0.9;
+/* PCは中央に配置 */
+@media screen and (min-width: 960px){
+    #portfolio .portfolio-item {
+        -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
+    }
+}
+/* スマホ・タブレットは少し上のほうに文字を配置 */
+@media screen and (max-width:959px){
+    #portfolio .portfolio-item {
+        -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-60%);
+            transform:translate(-50%,-60%);
+    }
 }
 
 #portfolio .text-center {
