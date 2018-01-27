@@ -5,10 +5,16 @@ body {
     font-style: normal;
 		font-weight: 300;
     overflow-x: hidden;
+
+    /* ”wŒi‚ğ•‚¢‚Á‚Ï‚¢‚É•\¦ */
     background-image: url("../images/bg.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+   
+    /* ”wŒi‰æ‘œ‚ª“Ç‚İ‚Ü‚ê‚é‘O‚É•\¦‚³‚ê‚é”wŒi‚ÌƒJƒ‰[ */
+    background-color: #020202;
 }
 
 
