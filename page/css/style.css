@@ -22,7 +22,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain 100%;
    
     /* ”wŒi‰æ‘œ‚ª“Ç‚İ‚Ü‚ê‚é‘O‚É•\¦‚³‚ê‚é”wŒi‚ÌƒJƒ‰[ */
     background-color: #020202;
