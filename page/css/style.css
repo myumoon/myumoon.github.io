@@ -8,7 +8,7 @@ body {
     overflow-x: hidden;
 }
 /* PC */
-@media screen and (min-width: 601px){
+@media screen and (min-width: 960px){
     body {
         background-image: url("../images/bg.jpg");
         
@@ -25,7 +25,7 @@ body {
 /*  スマホ・タブレット
     https://qiita.com/volkuwabara/items/bedaf09244f5cdebb228
 */
-@media screen and (max-width:600px){
+@media screen and (max-width:959px){
    body::before {
         /* background-image: url("../images/bg_mobile.jpg") no-repeat left top; */
         background: url("../images/bg_mobile.jpg") no-repeat left top;
