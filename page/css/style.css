@@ -447,10 +447,15 @@ a:hover, a:active, a:focus {
 }
 
 #single-project .col-md-12,
-#single-project .col-md-6,
+#single-project .col-md-6 {
+    padding-left: 10px;
+    padding-bottom: 22px;
+}
+
 #single-project .col-md-4 {
-  padding-left: 0px;
-  padding-bottom: 22px;
+    background: rgba(32,32,32,0.6);
+    margin: 2px;
+    width: 30%;
 }
 
 #single-project .col-md-12 {
@@ -462,13 +467,35 @@ a:hover, a:active, a:focus {
   padding-top: 12px;
 }
 
+/*
 #single-project a {
   color: #555;
   font-weight: bold;
   letter-spacing: 1px;
   padding-left: 14px;
 }
+*/
 
+.col-download img {
+    width: 30%;
+}
+.download_hover:hover {
+    width: 30%;
+    background-image: url("../images/download_windows_ng.png");
+}
+.howto {
+    margin: auto;
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+}
+.howto th,td {
+    color: #FFFFFF;
+    text-align: left;
+    border: 1px solid #FFFFFF;
+    border-collapse: collapse;
+    padding: 8px 15px;
+    text-shadow: 1px 1px 1px #707070;
+}
 
 
 /*---------------------------------------
@@ -786,5 +813,4 @@ footer .footer-copyright {
   }
 
 }
-
 
