@@ -139,7 +139,9 @@ a:hover, a:active, a:focus {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  /*
   background: none repeat scroll 0 0 #ffffff;
+  */
 }
 
 .sk-spinner-wordpress.sk-spinner {
