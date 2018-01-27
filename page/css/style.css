@@ -19,7 +19,9 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-style: normal;
   font-weight: 300;
+  color: #ffffff;
   letter-spacing: 0.5px;
+  text-shadow: 1px 1px 1px #707070;
 }
 
 h1 {
@@ -45,11 +47,12 @@ h4 {
 }
 
 p {
-    color: #777;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 300;
     line-height: 26px;
     letter-spacing: 0.2px;
+    text-shadow: 1px 1px 1px #707070;
 }
 
 strong {
@@ -71,15 +74,17 @@ html{
 }
 
 a {
-  color: #4d638c;
+  color: #a7e9ff;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none !important;
+  text-shadow: 1px 1px 1px #707070;
 }
 a:hover, a:active, a:focus {
-  color: #4d638c;
+  color: #42adff;
   outline: none;
+  text-shadow: 1px 1px 1px #707070;
 }
 
 * {
