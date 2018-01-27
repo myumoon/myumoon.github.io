@@ -321,7 +321,6 @@ a:hover, a:active, a:focus {
 }
 
 
-
 /*---------------------------------------
    About section              
 -----------------------------------------*/
@@ -814,3 +813,87 @@ footer .footer-copyright {
 
 }
 
+/*---------------------------------------
+   Profile
+-----------------------------------------*/
+/* 横スクロール
+   https://qiita.com/sottar/items/f6ee7426d05b47fbf7fb
+*/
+/*
+.gnav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /*
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    */
+    .item {
+        background: #444;
+        display: table-cell;
+        &:hover {
+            opacity: 0.9;
+            a:hover {
+                opacity: 0.9;
+            }
+        }
+        a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #f6f6f6;
+        }
+    }
+}
+*/
+/*
+.wrapper {
+    width: 465px;
+    height: 465px;
+    position: relative;
+}
+
+.side-scroll {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    overflow: scroll;
+    border: 1px solid #888;
+}
+
+.gnav {
+    white-space: nowrap;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: red;
+}
+*/
+
+/* 横スクロールリストの要素 */
+.item {
+    /* 程よい余白のため */
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    /* 程よいサイズ */
+    width: 100px;
+    height: 100px;
+    /* 枠線 */
+    border: 1px solid black;
+    /* インラインブロックにして改行しないブロックに */
+    display: inline-block;
+}
+
+/* 横スクロールリストのコンテナ */
+.gnav {
+    white-space: nowrap;
+    overflow-x: scroll;
+}
